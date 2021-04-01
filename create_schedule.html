@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Subst</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body class="global-body">
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean" style="background: rgba(255,255,255,0);">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="border-style: none;border-top-color: rgb(136,;border-right-color: 136,;border-bottom-color: 136);border-left-color: 136,;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color: rgb(255,255,255);"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="create_schedule.html">Create Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-toggle="dropdown" href="#">Dropdown </a>
+                        <div class="dropdown-menu show"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form class="d-flex flex-column align-items-center" style="width: 100%;padding: 25px;"><label style="color: rgb(255,255,255);">Drug Name</label><input class="form-control" type="text" id="drug-search-input">
+        <ul class="d-flex flex-column justify-content-center" id="drug-search-list" style="color: rgb(0,0,0);background: #ffffff;width: 90%;border-radius: 9px;box-shadow: 4px 5px 5px 0px rgb(0,0,0);border-style: none;"></ul>
+        <div class="d-flex" id="dose-range">
+            <div><label class="d-flex justify-content-center" style="color: rgb(255,255,255);">Start Dose</label><input class="form-control" type="number" id="start-dose"></div>
+            <div><label class="d-flex justify-content-center" style="color: rgb(255,255,255);">Start Dose</label><input class="form-control" type="number" id="end-dose"></div>
+        </div><label id="dose-type" style="color: rgb(255,255,255);">Dose Type</label><input class="form-control" type="text" id="drug-name-1">
+        <div class="d-flex flex-row justify-content-center" id="date-range" style="width: 100%;">
+            <div><label class="d-flex justify-content-center" style="color: rgb(255,255,255);">Start Date</label><input class="form-control" id="start-date" type="date"></div>
+            <div><label class="d-flex justify-content-center" style="color: rgb(255,255,255);">End Date</label><input class="form-control" id="end-date" type="date"></div>
+        </div><label style="color: rgb(255,255,255);">Time</label><input type="time" class="form-control" id="time"/><select class="form-control" id="days-of-week" style="margin-top: 17px;" multiple="">
+            <option value="0">Sunday</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+        </select><button class="btn btn-primary" id="submit" type="button">Submit</button>
+    </form>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/AddDose.js"></script>
+    <script src="assets/js/CreateSchedule.js"></script>
+    <script src="assets/js/Doses.js"></script>
+    <script src="assets/js/Drugs.js"></script>
+    <script src="assets/js/DrugSelect.js"></script>
+    <script src="assets/js/EditDose.js"></script>
+    <script src="assets/js/Home.js"></script>
+    <script src="assets/js/Schedules.js"></script>
+</body>
+
+</html>
