@@ -1,0 +1,287 @@
+html, body, #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    padding: 0px;
+    color: white;
+}
+main {
+    /* Temporary color */
+    background-color: inherit;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+}
+/* #optionsBlock {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    bottom: 70px;
+    display: flex;
+    position: absolute;
+    background-color: black;
+    animation: revealAddMenu .35s;
+} */
+/* #optionsBlock .menuOption {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+} */
+/* #optionsBlock .menuOption img {
+    height: 30px;
+} */
+/* #optionsBlock .menuOption:hover { 
+    background-color: darkgrey;
+    color: black;
+} */
+@keyframes revealAddMenu {
+    from {height: 0px; opacity: 0}
+    to {height: 100px; opacity: 1}
+}
+.card h1{
+    color: white;
+    font-size: 2em;
+}
+#drug-name {
+    color: white;
+}
+
+.dose-cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-select-option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: height 0.2s;
+
+}
+.search-select-option {
+    color: white;
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 15px;
+    
+}
+.search-icon {
+    width: 75px;
+    position: relative;
+    bottom: 25px;
+}
+input {
+    border-radius: 10px;
+    height: 30px;
+}
+.search-select > input {
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.dose-card-dropdown.closed {
+    height: 0px;
+    overflow: hidden;
+}
+
+.dose-card-dropdown.opened {
+    height: 250px;
+    overflow: auto;
+}
+
+
+.dose-card-dropdown {
+    background-color: rgb(38, 38, 39);
+    transition: height 0.2s;
+}
+.dose-card-body {
+    height: 50px;
+    display: flex;
+    font-size: 8px;
+    background-color: transparent!important;
+    width: 100%;
+}
+
+.day-select.unchecked {
+    color: white;
+}
+
+.day-select.checked {
+    color: rgb(111, 134, 172);
+}
+
+.card {
+    background-color: rgb(21,21,21);
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.dose-card-dropdown > button {
+    background-color: black;
+}
+.dose-card-dropdown > a > button {
+    background-color: black;
+}
+
+.day-of-week-selector {
+    background-color: rgb(47, 47, 47);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 2px;
+}
+.search-select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+.search-select-option.checked {
+    background-color: black;
+}
+.search-select-option.unchecked {
+    background-color: rgb(21,21,21);
+}
+#drug-info-page {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edit-text-area {
+    background-color: rgb(7, 7, 8);
+    width: 100%;
+    font-size: 1.5em;
+    overflow: hidden;
+    color: white;
+}
+.schedule-card {
+    background-color: rgb(38, 38, 39);
+    border-radius: 10px;
+}
+h2 {
+    color: white;
+}
+.nav-icon {
+    width: 50px;
+}
+.button-orb {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    background-color: rgb(111, 134, 172);
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.button-orb-text {
+    margin: 0px;
+}
+.button-orb.closed {
+    
+}
+
+.button-orb.opened {
+    transform: rotate(135deg);
+}
+
+.add-button-options-display {
+    position: fixed;
+    bottom: 60px;
+    transition: height 0.2s;
+    width: 100vw;
+    background-color: rgb(21,21,21);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    right: 0px;
+}
+.add-button-options-display.closed {
+    height: 0px;
+    overflow: hidden;
+}
+
+.add-button-options-display.opened {
+    height: 150px;
+    overflow: auto;
+    
+    padding-top: 20px;
+}
+
+.search-select-option-container.opened {
+    height: 150px;
+    overflow: scroll;
+}
+
+.search-select-option-container.closed {
+    height: 0px;
+    overflow: hidden;
+}
+.error {
+    color: red;
+}
+.search-select > input {
+    width: 100%;
+}
+
+.dose-card-section-card {
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+.highlighted {
+    color: rgb(0, 234, 255);
+    margin: 0px;
+    padding: 0px;
+}

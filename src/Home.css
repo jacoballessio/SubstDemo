@@ -1,0 +1,38 @@
+main {
+    /*
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    */
+}
+.card * {
+    margin-top: 5px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+}
+
+.card-subtitle {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+button /* Specify the type of button here? */ {
+    background-color: black;
+    padding: 8px 13px 8px 13px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    transition: .15s;
+}
+button:hover {
+    background-color: #0069d9;
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
